@@ -1,0 +1,81 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-imagenes{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.img-banner{
+    z-index: 1;
+    height: 50vw;
+    overflow: hidden;
+}
+.img-logo{
+    z-index: 2;
+    width: 40%;
+    min-width: 4rem;
+    max-width: 25rem;
+    margin-top: -30vw;
+    filter: drop-shadow(0px 0px 6px rgb(87, 85, 85 / 0.7));
+}
+.contenedor-menu{
+    &.fijo{
+        margin-top: 0;
+        background-color: white;
+        height: 24vw;
+        max-height: 13rem;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .2rem .3rem rgba(0,0,0,0.1);
+    }
+    h1{
+        font-size: 5vw;
+        margin-bottom: 1rem;  
+        font-weight: 800;
+        cursor: default;      
+    }
+    nav{
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        font-weight: 600;    
+        gap: 12.5%;
+        a{
+            color: black;
+            padding: 0.8rem;
+        }
+        a:hover{
+            color: rgb(65, 65, 179);
+        }
+        .boton-activado{
+            background-color: rgb(90, 197, 206);
+            color: white;
+            border-radius: 2rem;            
+        }
+    }
+    color: black;
+    margin: 6% 0;
+    margin-top: 10vw;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

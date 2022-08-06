@@ -1,0 +1,190 @@
+.contenedor-imagen-cuadro{
+    width: 100%;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-img{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    padding: 0;
+    height: 42vw;
+    max-height: 18rem;
+    width: 100%;
+    max-width: 36rem;
+    filter: drop-shadow(0 7px 5px rgba($color: #000000, $alpha: 0.1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/category.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position:center;
+    &:hover{
+        cursor: pointer;
+    }
+    .titulo-cuadro{        
+        user-select: none;
+        color: white;
+        margin-top: 80px;
+        font-size: 20px;
+        filter: drop-shadow(0 4px 4px rgba(0,0,0,0.9));
+        cursor: pointer;
+        &:hover{
+            color: yellow;
+        }
+    }
+    .hapiness{
+        margin-top: 0;
+    }
+    .span-titulo-cuadro{
+        user-select: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        margin-top: -4.7rem;
+        font-size: 15px;
+        filter: drop-shadow(0 2px 2px rgba(0,0,0,0.9));
+        cursor: pointer;
+        &:hover{
+            color: yellow;
+        }
+    }
+}
+
+// .imagen-bebida{
+// }
+.alinear-bebida{
+    display: flex;
+    flex-direction: column;
+    p{
+        margin-top: -5px;
+        margin-bottom: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(34, 78, 88);
+    }
+}
+.contenedor-iconos-bebidas{
+    width: 24rem;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cafe{    
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/cafes.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position:center;
+}
+.refresco{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/refrescos.webp);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position:center;
+}
+.cerveza{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/cervezavinos.jpg);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position:center;
+}
+.cocktail{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/cocktail.jpg);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position:center;
+}
+.lista-cuadros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*Productos*/
+.lista-productos{    
+    background-color: rgb(232, 224, 224);
+    margin-top: 30px;
+    width: 100vw;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.li-lista-producto{
+    border-bottom: solid rgb(191, 180, 180);
+    border-width: 1.5px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    .contenedor-imagen-producto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 20px;        
+    }
+}
+.producto-iterado{
+    height: 12rem;
+    width: 50%;
+    margin-left: 10px;
+    margin-top: -20px;
+    margin-bottom: -90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-between;
+    .contenedor-iconos{
+        display: flex;
+        flex-direction: row;
+    }
+}
+p{
+    font-size: 12px;
+    line-height: 12px;
+}
+.titulo-producto{
+    text-align: left;
+    font-size: 14px;
+    color: black;
+}
+.icono-producto{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 5px;
+}
+.texto-precio{
+    font-size: 13px;
+    color: rgb(14, 128, 109);
+}
+.imagen-producto{
+    z-index: 2;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 20rem;
+    position: relative;
+    bottom: 40px;
+}
+
+.icono-producto-bebida{
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    bottom: 24px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(100, 240, 240);
+        border-radius: 40rem;
+    }
+}
