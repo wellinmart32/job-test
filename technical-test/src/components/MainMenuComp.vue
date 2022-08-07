@@ -264,6 +264,9 @@ export default {
   props: {
     msg: String,
   },
+  mounted() {
+    iniciarApp();
+  }
 };
 </script>
 

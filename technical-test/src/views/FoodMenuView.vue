@@ -897,6 +897,16 @@ function menuIdioma() {
   body.appendChild(overlay);
   body.classList.add("fijar-body");
 }
+
+export default {
+  name: "FoodMenuView",
+  props: {
+    msg: String,
+  },
+  mounted() {
+    iniciarApp();
+  },
+};
 </script>
 
 <style scoped>
